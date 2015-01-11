@@ -10,13 +10,16 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // show image
+    self.imageView.image = [UIImage imageNamed:@"boat1"];
 }
 
 - (void)didReceiveMemoryWarning {
